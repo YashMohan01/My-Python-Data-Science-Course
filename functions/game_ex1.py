@@ -9,4 +9,11 @@ def draw():
     p.draw()
     c.draw()
 
+def update():
+    p.x +=1
+    p.angle = -10
+    if p.x > WIDTH:
+        p.x = 0
+    print(p.x,p.y)
+
 pgzrun.go()
